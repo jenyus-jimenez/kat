@@ -7,7 +7,7 @@ $(document).ready(function() {
         "¡Sigue sonriendo!",
         "¡Toma agua!",
         "¡Quiero verte!",
-        "¡No te preocupes, si se puede",
+        "¡No te preocupes kat, si se puede",
     ];
 
     const colorPairs = [
