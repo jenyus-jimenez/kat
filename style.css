@@ -16,8 +16,10 @@ body {
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center center; /* Asegura que la imagen esté centrada */
     position: relative; /* Para permitir que los hijos con z-index funcionen correctamente */
 }
+
 
 #bg-img::before {
     content: '';
@@ -36,12 +38,7 @@ h1 {
     animation: pulse 2s infinite;
     color: white;
     position: relative;
-    z-index: 2;
-    text-shadow: 
-        2px 2px 0px black,  /* Sombra hacia abajo a la derecha */
-        -2px -2px 0px black, /* Sombra hacia arriba a la izquierda */
-        -2px 2px 0px black,  /* Sombra hacia abajo a la izquierda */
-        2px -2px 0px black;  /* Sombra hacia arriba a la derecha */
+    z-index: 2; /* Asegura que el texto esté por encima del pseudo-elemento oscuro */
 }
 
 @keyframes pulse {
